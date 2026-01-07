@@ -1,0 +1,7 @@
+--index-url=https://console.redhat.com/api/pypi/public-rhai/rhoai/3.3/cpu-ubi9-test/simple/
+
+mlserver==1.7.1+rhai5
+mlserver-lightgbm==1.7.1+rhai5
+mlserver-sklearn==1.7.1+rhai5
+mlserver-xgboost==1.7.1+rhai5
+tritonclient==2.63.0+rhai1
