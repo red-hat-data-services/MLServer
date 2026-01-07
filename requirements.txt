@@ -1,6 +1,6 @@
---index-url=https://console.redhat.com/api/pypi/public-rhai/rhoai/3.2/cpu-ubi9/simple/
+--index-url=https://console.redhat.com/api/pypi/public-rhai/rhoai/3.3/cpu-ubi9-test/simple/
 
-mlserver==1.7.1+rhai4 --hash=sha256:b227fca19452fea1930b0c31604f1636c9e7befcc517c958502d34e7f4fbf325
-mlserver-xgboost==1.7.1+rhai4 --hash=sha256:698b7f454274f90ca703c0a461c8d79302ecc46901fcf73e12d0a957b1f86daf
-mlserver-lightgbm==1.7.1+rhai4 --hash=sha256:22ff726821b24f05f47faf29af8b114c8a9d356be1274532bcda16ba290ed7b8
-mlserver-sklearn==1.7.1+rhai4 --hash=sha256:5d4b8521cff626934df99f2d0d0e5993e2596e93f12c4ed48d9c30bac51a1751
+mlserver==1.7.1+rhai5 --hash=sha256:7d3ad27446e0f17a1c02c2a60c9d8e4fd10c7e1881839d7904c36edb2a5f7448
+mlserver-lightgbm==1.7.1+rhai5 --hash=sha256:f5f95a6fb3aa904d20ecdfa926b2adbab2b12cfe4d6a0ecdd5d9dbeabfd7999c
+mlserver-sklearn==1.7.1+rhai5 --hash=sha256:85254bf23b7c7f4c03ce678f11ac6017f059f340e384ab652465ac05ff8c9d96
+mlserver-xgboost==1.7.1+rhai5 --hash=sha256:bf4a7827b61a8f61c320d978c75e747783e5f8621e8ba9909d46da7bf025bdbf
