@@ -38,7 +38,7 @@ spec:
   - name: path-context
     value: .
   - name: prefetch-input
-    value: '{"type": "pip", "path": ".", "requirements_files": ["requirements.txt"], "binary":{}}'
+    value: '{"type": "pip", "path": ".", "requirements_files": ["requirements.txt"], "binary":{"aiohttp": ["x86_64", "aarch64"], "aiokafka": ["x86_64", "aarch64"], "brotli": ["x86_64", "aarch64"], "frozenlist": ["x86_64", "aarch64"], "gevent": ["x86_64", "aarch64"], "geventhttpclient": ["x86_64", "aarch64"], "greenlet": ["x86_64", "aarch64"], "grpcio": ["x86_64", "aarch64"], "lightgbm": ["x86_64", "aarch64"], "multidict": ["x86_64", "aarch64"], "numpy": ["x86_64", "aarch64"], "orjson": ["x86_64", "aarch64"], "pandas": ["x86_64", "aarch64"], "propcache": ["x86_64", "aarch64"], "pydantic-core": ["x86_64", "aarch64"], "python-rapidjson": ["x86_64", "aarch64"], "scikit-learn": ["x86_64", "aarch64"], "scipy": ["x86_64", "aarch64"], "uvloop": ["x86_64", "aarch64"], "wrapt": ["x86_64", "aarch64"], "xgboost": ["x86_64", "aarch64"], "yarl": ["x86_64", "aarch64"], "zope-interface": ["x86_64", "aarch64"]}}'
   - name: build-image-index
     value: true
   - name: build-platforms
