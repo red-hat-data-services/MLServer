@@ -26,6 +26,13 @@ spec:
     value: '{{revision}}'
   - name: output-image
     value: quay.io/rhoai/odh-mlserver-rhel9:{{target_branch}}
+  - name: additional-tags
+    value:
+    - '{{target_branch}}-{{revision}}'
+  - name: additional-labels
+    value:
+    - version=v3.2.0
+    - io.openshift.tags=odh-mlflow
   - name: dockerfile
     value: Dockerfile.konflux
   - name: path-context
