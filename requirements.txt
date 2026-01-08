@@ -1,6 +1,13 @@
---index-url=https://console.redhat.com/api/pypi/public-rhai/rhoai/3.3/cpu-ubi9-test/simple/
+--index-url=https://console.redhat.com/api/pypi/public-rhai/rhoai/3.2/cpu-ubi9/simple/
 
-mlserver==1.7.1+rhai5
-mlserver-lightgbm==1.7.1+rhai5
-mlserver-sklearn==1.7.1+rhai5
-mlserver-xgboost==1.7.1+rhai5
+mlserver==1.7.1+rhai4 \
+    --hash=sha256:b227fca19452fea1930b0c31604f1636c9e7befcc517c958502d34e7f4fbf325
+
+mlserver-lightgbm==1.7.1+rhai4 \
+    --hash=sha256:698b7f454274f90ca703c0a461c8d79302ecc46901fcf73e12d0a957b1f86daf
+
+mlserver-sklearn==1.7.1+rhai4 \
+    --hash=sha256:22ff726821b24f05f47faf29af8b114c8a9d356be1274532bcda16ba290ed7b8
+
+mlserver-xgboost==1.7.1+rhai4 \
+    --hash=sha256:5d4b8521cff626934df99f2d0d0e5993e2596e93f12c4ed48d9c30bac51a1751
