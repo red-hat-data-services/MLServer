@@ -133,7 +133,7 @@ types-requests = ">=2.28.11.5,<2.33.0.0"
 torch = "^2.4"
 pytorch-lightning = "^2.4"
 torchmetrics = "1.6.0"
-torchvision = "0.19.1"
+torchvision = "0.24.1"
 mlflow = "2.19.0"
 
 ## Dev dependencies from HuggingFace
