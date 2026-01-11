@@ -1,4 +1,4 @@
-ARG BUILDER_BASE_IMAGE="python:3.12-slim"
+ARG BUILDER_BASE_IMAGE="python:3.14-slim"
 ARG RUNTIME_BASE_IMAGE="registry.access.redhat.com/ubi9/ubi-minimal"
 ARG RUNTIMES="lightgbm sklearn xgboost"
 
