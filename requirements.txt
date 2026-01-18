@@ -208,8 +208,9 @@ six==1.17.0 \
 starlette-exporter==0.23.0 \
     --hash=sha256:de75f1f7aad3df2125efcefeb66d09917cc8332b458d150e28c811b21528bd8f
 
-starlette==0.46.2 \
-    --hash=sha256:c16b9ce1d98c5e186fc726ea34ea05311af16547488943a7cf1c330be3c93fe1
+starlette==0.52.1 \
+    --hash=sha256:0029d43eb3d273bc4f83a08720b4912ea4b071087a3b48db01b7c839f7954d74 \
+    --hash=sha256:834edd1b0a23167694292e94f597773bc3f89f362be6effee198165a35d62933
 
 threadpoolctl==3.6.0 \
     --hash=sha256:c60cf5b3da9f08563d2437473d5db44bdbcb906200096beadb09a9cc6db9c615
