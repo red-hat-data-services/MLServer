@@ -18,8 +18,9 @@ aiosignal==1.4.0 \
 annotated-types==0.7.0 \
     --hash=sha256:2733aff720ce5f6d66ae1d604eb26acd62cb4adfebfab06a69323e8555c38c38
 
-anyio==4.12.0 \
-    --hash=sha256:837096d005e0b83e5218ff6cb0b895d728adc2a3b98079e2dd32c967244bfe90
+anyio==4.12.1 \
+    --hash=sha256:41cfcc3a4c85d3f05c932da7c26d0201ac36f72abd4435ba90d0464a3ffed703 \
+    --hash=sha256:d405828884fc140aa80a3c667b8beed277f1dfedec42ba031bd6ac3db606ab6c
 
 asgiref==3.11.0 \
     --hash=sha256:a89de2cb2b74cd0c84742fac70e83c8fb8bf4bad5227cf6cd745ef85c51f65fe
