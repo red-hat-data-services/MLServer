@@ -66,8 +66,9 @@ h11==0.16.0 \
 idna==3.11 \
     --hash=sha256:b3c39c471312b8d7d0a1e7a7edce1c1f57cfa56d7e3d6850343dc4c5788fe589
 
-importlib-metadata==8.7.0 \
-    --hash=sha256:13bfdc49f7dcd4e523901325501231caedd1eb5421e2368ae63bb015961f770e
+importlib-metadata==8.7.1 \
+    --hash=sha256:49fef1ae6440c182052f407c8d34a68f72efc36db9ca90dc0113398f2fdde8bb \
+    --hash=sha256:5a1f80bf1daa489495071efbb095d75a634cf28a8bc299581244063b53176151
 
 importlib-resources==6.5.2 \
     --hash=sha256:068cabae9ad86433e622fcfaeb2f80c93720c8575dcae299c2bbd033cd52250b
