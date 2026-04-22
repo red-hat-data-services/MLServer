@@ -226,8 +226,9 @@ typing-inspection==0.4.2 \
 tzdata==2025.3 \
     --hash=sha256:79f5502eb2eeaa6025d5ce885f1f969aeb83cb43ab7a0bca20cface0d1929ca6
 
-urllib3==2.6.2 \
-    --hash=sha256:d2dce5ea8380bea9164841c697b83fca7b9295a1933cb49483e6063eddbd582b
+urllib3==2.6.3 \
+    --hash=sha256:1b62b6884944a57dbe321509ab94fd4d3b307075e0c2eae991ac71ee15ad38ed \
+    --hash=sha256:bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4
 
 uvicorn==0.38.0 \
     --hash=sha256:211c066f63b209ef494b167b5db0c9cd2ab065d7c126963f49ad88928f8ed5fc
