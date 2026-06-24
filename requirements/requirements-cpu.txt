@@ -32,8 +32,8 @@ aiosignal==1.4.0 \
 annotated-types==0.7.0 \
     --hash=sha256:fcdc578cef2d4fd8770abc0ceb0241c68c992698aa7a5f945ce67651dd585cfb
 
-anyio==4.12.1 \
-    --hash=sha256:e18da418b6421e6735231319ea8ae4262f68b52b8dbcb4699a7a14f89cfb2b15
+anyio==4.13.0 \
+    --hash=sha256:73de001aa4877dde7467ba6056fbd1becda26499ba5384dae358d923b46228d4
 
 asgiref==3.11.0 \
     --hash=sha256:482c6434d2540c6e234015a9f9636568be781fc8b772be199e640e523f106342
@@ -83,8 +83,8 @@ grpcio==1.76.0 \
 h11==0.16.0 \
     --hash=sha256:a485f5bfa77401603f78cff4db5bb4dbaadb947a3da8eae068cd05b6bb4aab66
 
-idna==3.11 \
-    --hash=sha256:e1049ef074501ba8c5d802d712b257889257f6d2f460f959f26c4b2d4375923c
+idna==3.18 \
+    --hash=sha256:22a28ed914616e078eab7a4655662d8ad303c0cc67ff55e4d79a53cab0237754
 
 importlib-metadata==8.7.1 \
     --hash=sha256:a3f29411f5f628be21c445082ff4f844a26ff1a0893d6fabaa55509c63ddbfaf
@@ -144,8 +144,8 @@ orjson==3.11.5 \
     --hash=sha256:1086348d722ec4c94ac3505d5de9376a93bcba026694799dfa5bbc2a87eace96 \
     --hash=sha256:81cc5beceed52d1081048983eb4b16ac9a10dc34d18a28125e03b0568c54eb7d
 
-packaging==26.0 \
-    --hash=sha256:76081d1703deb79a44f8c44f23e391b98ab21ea54a2c21b0e8890779e0eaecb7
+packaging==26.2 \
+    --hash=sha256:93887c677c440c1fa57d1c1c5b215638fc66f79af3450b33c640335ce281312a
 
 pandas==3.0.0 \
     --hash=sha256:83a81fdcf94fd8344ac720004cb8c4d29fb4a598f09abcb4b873f29265bb350b \
@@ -220,8 +220,8 @@ typing-extensions==4.15.0 \
 typing-inspection==0.4.2 \
     --hash=sha256:4baec0c9a4ad5cc8a85c71c387e98ff9ecc7b85b6e538e204343940090be3b63
 
-urllib3==2.6.3 \
-    --hash=sha256:a5bd1dd5b4c7b1da77f93abcd09f8619209b2f11fe699382f6cb79b34dc89437
+urllib3==2.7.0 \
+    --hash=sha256:2c89459e59ada9c2656df2bfa310adb4e68f96a08a95a65f4276d15ca20cb71d
 
 uvicorn==0.40.0 \
     --hash=sha256:509ce5e8c5f8b2476a1d64ae22be335db7a62673836b7c829fee2c1a8e38008c
