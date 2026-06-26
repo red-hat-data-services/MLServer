@@ -27,7 +27,7 @@ spec:
   - name: output-image
     value: quay.io/rhoai/odh-mlserver-rhel9:{{target_branch}}
   - name: rhoai-version
-    value: "3.3.4"
+    value: "3.3.5"
   - name: additional-tags
     value:
     - '{{target_branch}}-{{revision}}'
@@ -36,7 +36,7 @@ spec:
   - name: path-context
     value: .
   - name: prefetch-input
-    value: '{"type": "pip", "path": ".", "requirements_files": ["requirements/requirements-cpu.txt"], "binary": {"arch": "x86_64,aarch64", "os": "linux"}}'
+    value: '{"type": "pip", "path": ".", "requirements_files": ["requirements.txt"], "binary": {"arch": "x86_64,aarch64", "os": "linux"}}'
   - name: build-image-index
     value: true
   - name: build-platforms
