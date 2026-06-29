@@ -181,8 +181,8 @@ python-dateutil==2.9.0.post0 \
 python-dotenv==1.2.2 \
     --hash=sha256:8b37db35fd3b8d36cf182846a9b3ad4c598eb6181a5afb1a1b5a54e3ff9c730c
 
-python-multipart==0.0.22 \
-    --hash=sha256:b5fc2a9738209bd168ef0c746ca0ee5eb66f2c69aeeb689e0dbc15b36c779aac
+python-multipart==0.0.27 \
+    --hash=sha256:10974e94424bc35747b0cef916aad43e3dad28b9d155877bddbf4dc298b3f9f5
 
 python-rapidjson==1.23 \
     --hash=sha256:0424a93b42bfce4ae80f9e3e846d15b92b5449334b978f993032b1df68995621 \
