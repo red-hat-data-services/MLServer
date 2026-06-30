@@ -47,7 +47,7 @@ spec:
           "requirements/requirements-cpu.txt"
         ],
         "binary": {
-          "arch": "x86_64,aarch64",
+          "arch": "x86_64,aarch64,ppc64le",
           "os": "linux"
         }
       }
