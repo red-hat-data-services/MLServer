@@ -6,7 +6,7 @@ All Tekton file updates **must be made in the `konflux-central` repository**.
 
 ## ✅ How to Make Changes
 
-To modify the pipelines for `mlserver` in the `rhoai-3.5` release:
+To modify the pipelines for `MLServer` in the `rhoai-3.5` release:
 
 - Clone the [`konflux-central`](https://github.com/red-hat-data-services/konflux-central) repository.
 
@@ -24,7 +24,7 @@ git checkout rhoai-3.5
 - Navigate to the Tekton files for your component(s).
 
 ```bash
-cd pipelineruns/mlserver/.tekton
+cd pipelineruns/MLServer/.tekton
 ```
 
 - Make the required changes to the Tekton YAML files.
@@ -32,7 +32,7 @@ cd pipelineruns/mlserver/.tekton
 - Commit and push your changes.
 
 ```bash
-git commit -am "Update pipelinerun for mlserver (rhoai-3.5)"
+git commit -am "Update pipelinerun for MLServer (rhoai-3.5)"
 git push origin rhoai-3.5
 ```
 
