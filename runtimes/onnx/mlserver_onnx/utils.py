@@ -1,6 +1,5 @@
 from typing import Any
 from collections.abc import Sequence
-import logging
 
 import onnx
 from onnx import helper
@@ -11,17 +10,6 @@ from mlserver.errors import ModelValidationError
 from mlserver.types import Datatype, MetadataTensor
 
 from .settings import OnnxSettings
-
-# Uses the underscore-prefixed naming convention (_ORT_LOG_SEVERITY,
-# _build_session_options, …) because these are internal
-# helpers not part of the public API.
-_ORT_LOG_SEVERITY = {
-    logging.DEBUG: 0,
-    logging.INFO: 1,
-    logging.WARNING: 2,
-    logging.ERROR: 3,
-    logging.CRITICAL: 4,
-}
 
 PREDICT_OUTPUT = "predict"
 VALID_OUTPUTS = [PREDICT_OUTPUT]
@@ -37,40 +25,27 @@ RUN_OPTIONS_KEY = "run_options"
 
 def _build_session_options(
     settings: OnnxSettings,
-    log_severity: int | None = None,
-) -> ort.SessionOptions:
+) -> ort.SessionOptions | None:
     """
     Build SessionOptions from settings.
 
-    Propagates the given log_severity to ONNX Runtime's log_severity_level
-    unless the user explicitly sets it via session_options in model-settings.json.
-
     Args:
         settings: Parsed ONNX settings.
-        log_severity: ORT log severity (0=VERBOSE..4=FATAL). If None,
-            log severity is not set (ORT uses its own default).
 
     Returns:
-        Configured SessionOptions instance.
+        SessionOptions or None if not configured.
 
     Raises:
         ModelValidationError: If session_options is invalid or unsupported.
     """
     session_options = settings.session_options
-
-    if session_options is None and log_severity is None:
-        return ort.SessionOptions()
-
     if session_options is None:
-        session_options = {}
+        return None
 
     if not isinstance(session_options, dict):
         raise ModelValidationError(
             "OnnxModel session_options must be a dict of SessionOptions fields"
         )
-
-    if "log_severity_level" not in session_options and log_severity is not None:
-        session_options["log_severity_level"] = log_severity
 
     options = ort.SessionOptions()
     for key, value in session_options.items():
@@ -84,17 +59,13 @@ def _build_session_options(
 
 
 def _apply_session_config_entries(
-    options: ort.SessionOptions, settings: OnnxSettings
-) -> ort.SessionOptions:
+    options: ort.SessionOptions | None, settings: OnnxSettings
+) -> ort.SessionOptions | None:
     """
     Apply session_config_entries to SessionOptions.
 
-    These are separate from session_options — session_config_entries use
-    ``add_session_config_entry()`` (ORT's key-value config API) rather than
-    direct attribute assignment on SessionOptions.
-
     Args:
-        options: Existing SessionOptions instance.
+        options: Existing SessionOptions or None.
         settings: Parsed ONNX settings.
 
     Returns:
@@ -111,6 +82,9 @@ def _apply_session_config_entries(
         raise ModelValidationError(
             "OnnxModel session_config_entries must be a dict of string keys"
         )
+
+    if options is None:
+        options = ort.SessionOptions()
 
     for key, value in entries.items():
         if not isinstance(key, str):
