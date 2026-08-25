@@ -1,8 +1,6 @@
-# Table of contents
-
 * [MLServer](README.md)
 * [Getting Started](getting-started.md)
-* [User Guide](user-guide/README.md)
+* [User Guide](user-guide/index.md)
   * [Content Types (and Codecs)](user-guide/content-type.md)
   * [OpenAPI Support](user-guide/openapi.md)
   * [Parallel Inference](user-guide/parallel-inference.md)
@@ -24,19 +22,15 @@
   * [Alibi-Explain](runtimes/alibi-explain.md)
   * [HuggingFace](runtimes/huggingface.md)
   * [Custom](runtimes/custom.md)
-
-* [API Reference](api/api-reference.md)
-  * [MLServer Settings](api/Settings.md)
-  * [Model Settings](api/ModelSettings.md)
-  * [Model Parameters](api/ModelParameters.md)
-  * [MLServer CLI](api/CLI.md)
-  <!-- * [MLServer CLI](api-reference/mlserver_cli.md) -->
-  * [Python API](api/PythonAPI.md)
-    * [MLModel](api/MLModel.md)
-    * [Types](api/Types.md)
-    * [Codecs](api/Codecs.md)
-    * [Metrics](api/Metrics.md)
-
+* [Reference](reference/README.md)
+  * [MLServer Settings](reference/settings.md)
+  * [Model Settings](reference/model-settings.md)
+  * [MLServer CLI](reference/cli.md)
+  * [Python API](reference/python-api/README.md)
+    * [MLModel](reference/api/model.md)
+    * [Types](reference/api/types.md)
+    * [Codecs](reference/api/codecs.md)
+    * [Metrics](reference/api/metrics.md)
 * [Examples](examples/README.md)
   * [Serving Scikit-Learn models](examples/sklearn/README.md)
   * [Serving XGBoost models](examples/xgboost/README.md)
@@ -54,4 +48,3 @@
   * [Streaming](examples/streaming/README.md)
   * [Deploying a Custom Tensorflow Model with MLServer and Seldon Core](examples/cassava/README.md)
 * [Changelog](changelog.md)
-* [Release Notes](https://github.com/SeldonIO/MLServer/releases)
