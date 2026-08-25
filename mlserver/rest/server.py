@@ -7,11 +7,7 @@ from ..model import MLModel
 
 from .utils import matches
 from .app import create_app
-from .logging import (
-    logger,
-    disable_health_access_logs,
-    clear_uvicorn_access_log_filters,
-)
+from .logging import logger, disable_health_access_logs
 
 
 class _NoSignalServer(uvicorn.Server):
@@ -64,7 +60,7 @@ class RESTServer:
     async def start(self):
         cfg = self._get_config()
         self._server = _NoSignalServer(cfg)
-        if self._settings.access_log and not self._settings.debug:
+        if not self._settings.debug:
             disable_health_access_logs()
 
         logger.info(
@@ -88,7 +84,7 @@ class RESTServer:
                 "host": self._settings.host,
                 "port": self._settings.http_port,
                 "root_path": self._settings.root_path,
-                "access_log": self._settings.access_log,
+                "access_log": self._settings.debug,
             }
         )
 
@@ -106,5 +102,3 @@ class RESTServer:
             sig = signal.SIGINT
 
         self._server.handle_exit(sig=sig, frame=None)
-        # handle_exit returns immediately; drain runs in serve().
-        clear_uvicorn_access_log_filters()

@@ -40,10 +40,9 @@ class GRPCServer:
 
         self._interceptors = []
 
-        if self._settings.access_log:
-            self._interceptors = [
-                LoggingInterceptor(skip_health=not self._settings.debug)
-            ]
+        if self._settings.debug:
+            # If debug, enable access logs
+            self._interceptors = [LoggingInterceptor()]
 
         if self._settings.metrics_endpoint:
             self._interceptors.append(
@@ -59,9 +58,6 @@ class GRPCServer:
                     ),
                     filters.full_method_name(
                         "/inference.GRPCInferenceService/ServerReady"
-                    ),
-                    filters.full_method_name(
-                        "/inference.GRPCInferenceService/ModelReady"
                     ),
                 )
             )
