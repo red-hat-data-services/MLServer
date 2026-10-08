@@ -65,3 +65,6 @@ LABEL com.redhat.component="odh-mlserver-rhel9" \
       io.k8s.display-name="odh-mlserver" \
       io.k8s.description="odh-mlserver" \
       com.redhat.license_terms="https://www.redhat.com/licenses/Red_Hat_Standard_EULA_20191108.pdf"
+
+# Rebuild for base image CVE fixes 2026-10-08T07:39:28Z
+
