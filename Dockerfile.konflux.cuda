@@ -1,4 +1,4 @@
-ARG BASE_IMAGE="quay.io/aipcc/base-images/cuda-12.9-el9.8:3.6"
+ARG BASE_IMAGE="quay.io/aipcc/base-images/cuda-12.9-el9.8:3.6@sha256:50ad00c377dbde5354039604aa9b680f63a4a01e8deeee4cf2de2a6e3c474760"
 # Space-separated list of runtime import paths
 ARG TRUSTED_RUNTIMES="mlserver_onnx.OnnxModel"
 
