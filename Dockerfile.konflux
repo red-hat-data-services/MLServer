@@ -1,4 +1,4 @@
-ARG RUNTIME_BASE_IMAGE="quay.io/aipcc/base-images/cpu:3.3"
+ARG RUNTIME_BASE_IMAGE="quay.io/aipcc/base-images/cpu:3.3@sha256:3bdcecaf61e2e8b18446706c1e1499c64a8629c992050420463548d393489172"
 
 FROM ${RUNTIME_BASE_IMAGE}
 
