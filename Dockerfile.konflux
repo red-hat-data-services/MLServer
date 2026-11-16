@@ -28,6 +28,13 @@ COPY requirements/requirements-cpu.txt requirements/requirements-cpu.txt
 RUN pip install --no-deps --require-hashes -r requirements/requirements-cpu.txt && \
     rm -rf /root/.cache/pip
 
+# uv is provided by the AIPCC base image for builds, but MLServer does not use
+# it at runtime. Remove both launchers so their embedded CA bundle is not shipped.
+RUN for tool in uv uvx; do \
+      tool_path="$(command -v "$tool" || true)"; \
+      if [ -n "$tool_path" ]; then rm -f "$tool_path"; fi; \
+    done
+
 COPY ./licenses/license.txt .
 COPY ./licenses/license.txt /licenses/
 
