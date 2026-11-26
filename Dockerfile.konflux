@@ -1,4 +1,4 @@
-ARG BASE_IMAGE="quay.io/aipcc/base-images/cpu-el9.8:3.6@sha256:c4811eab929773e3f5ee1cf55cc4896d885eb77dd11e6e114e6fd91dd24bd39b"
+ARG BASE_IMAGE="quay.io/aipcc/base-images/cpu-el9.8:3.6@sha256:d554430f4990690127a76bd3f76c10782e451745d53f01d9d6445e68b14eb9b6"
 # Space-separated list of runtime import paths
 ARG TRUSTED_RUNTIMES="mlserver_lightgbm.LightGBMModel mlserver_onnx.OnnxModel mlserver_sklearn.SKLearnModel mlserver_xgboost.XGBoostModel"
 
